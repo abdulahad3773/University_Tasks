@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: rgb(255, 233, 198);
+    font-family: "Poppins", Arial, sans-serif;
+    color: rgb(51, 51, 51);
+}
+
+.cv {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(230, 126, 34);
+    border-radius: 10px;
+}
+
+.header {
+    background-color: rgb(230, 126, 34);
+    color: rgb(255, 255, 255);
+    padding: 25px 20px;
+    text-align: center;
+}
+
+.name {
+    margin: 0 0 15px 0;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.photo {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 50%;
+}
+
+.content {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.sidebar {
+    flex: 1;
+}
+
+.main {
+    flex: 2;
+}
+
+.box {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(240, 190, 140);
+    border-radius: 8px;
+}
+
+.box-title {
+    margin: 0 0 10px 0;
+    font-size: 21px;
+    font-weight: 600;
+    color: rgb(200, 100, 20);
+}
+
+.about-text {
+    margin: 0;
+    font-size: 15px;
+}
+
+.edu-list,
+.skill-list,
+.job-list,
+.edu-sub,
+.job {
+    list-style:none ;
+    margin: 0;
+    padding: 0;
+}
+
+.edu-item {
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.edu-sub {
+    padding-left: 20px;
+    font-size: 15px;
+
+}
+
+
+
+
+.skill-list li {
+ 
+    padding: 4px 0 4px 20px;
+    font-size: 15px;
+}
+
+
+
+.job {
+    margin-top: 12px;
+}
+
+.job-title {
+    margin: 0;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.job-list li {
+    padding: 2px 0 2px 20px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+
+
+.skill-list li:hover,
+.job-list li:hover,
+.edu-item:hover {
+    color: rgb(230, 126, 34);
+}
+
+.photo:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .content {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .name {
+        font-size: 26px;
+    }
+
+    .photo {
+        width: 100px;
+        height: 100px;
+    }
+}
