@@ -2,7 +2,7 @@
 using namespace std;
 int main(){
 int n,numch;
-int countup=0,countl=0,counta=0,counte=0,counti=0,counto=0,countu=0;
+int cup=0,cl=0,ca=0,ce=0,ci=0,co=0,cu=0;
 char ch;
 cout<<"Enter number of character you want to enter"<<endl;
 cin>>n;
@@ -14,20 +14,20 @@ for(int i=0;i<n;i++){
   a[i]=ch;
   numch=static_cast<int>(ch);
   if(numch>=65 && numch<=90) {
-  countup++;
-    if(numch==65)counta++;
-    else if(numch==69)counte++;
-    else if(numch==73)counti++;
-    else if(numch==79)counto++;
-    else if(numch==85)countu++;
+  cup++;
+    if(numch==65)ca++;
+    else if(numch==69)ce++;
+    else if(numch==73)ci++;
+    else if(numch==79)co++;
+    else if(numch==85)cu++;
   
   }else{
-  countl++;
-    if(numch==97)counta++;
-    else if(numch==101)counte++;
-    else if(numch==105)counti++;
-    else if(numch==111)counto++;
-    else if(numch==117)countu++;
+  cl++;
+    if(numch==97)ca++;
+    else if(numch==101)ce++;
+    else if(numch==105)ci++;
+    else if(numch==111)co++;
+    else if(numch==117)cu++;
   
   }
 
@@ -35,16 +35,16 @@ for(int i=0;i<n;i++){
 
 }
 cout<<endl;
-cout<<"Uppercase letter :"<<countup<<endl;
-cout<<"lowercase letter :"<<countl<<endl;
+cout<<"Uppercase letter :"<<cup<<endl;
+cout<<"lowercase letter :"<<cl<<endl;
 cout<<endl;
 cout<<endl;
 cout<<"Vowel frequency: "<<endl;
-cout<<"a: "<<counta++<<endl;
-cout<<"e: "<<counte++<<endl;
-cout<<"i: "<<counti++<<endl;
-cout<<"o: "<<counto++<<endl;
-cout<<"u: "<<countu++<<endl;
+cout<<"a: "<<ca++<<endl;
+cout<<"e: "<<ce++<<endl;
+cout<<"i: "<<ci++<<endl;
+cout<<"o: "<<co++<<endl;
+cout<<"u: "<<cu++<<endl;
 a[0]=static_cast<char>(a[0]-32);
 cout<<"capitalized Sentence:";
 for(int i=0;i<n;i++){
